@@ -1,0 +1,195 @@
+<!DOCTYPE html> <!-- Informa qual é o tipo de documento-->
+<html lang="pt-br">
+<!--Linguagemdo site-->
+
+<head>
+    <!-- Cabeçario-->
+    <meta charset="UTF-8">
+    <!--Ativação do portugues-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- este eu não sei veio automatico-->
+    <meta name="description" content="Página para testar o conteudo do curso HTML e CSS pro">
+    <!--Aqu v ai a descrição do site-->
+    <!--meta http-equiv="refresh" content="10"> -->
+        <!--para atualizar a pagina a casa  tempo , definido em content-->
+        <meta name="author" content="mayara">
+        <!--autor da pagina-->
+        <meta keywords content="site, css, html">
+        <!--Palavras chaves o google não usa mais este dado-->
+        <title>Curso HTML & CSS pro</title> <!-- Titulo da página-->
+</head>
+
+<body>
+    <!-- corpo. Tudo que sera exibido para o Usuario-->
+    <h1>Cabeçario da minha página</h1> <!-- Elemento que define o  cabeçario (titulo)-->
+    <p>Este é meu primeiro Parágrafo</p>
+    <!--Elemento que define o paragrafo-->
+    <h1>Titulo h1</h1>
+    <!--Niveis de titulo-->
+    <h2>Titulo h2</h2>
+    <h3>Titulo h3</h3>
+    <h4>Titulo h4</h4>
+    <h5>Titulo h5</h5>
+    <h6>Titulo h6</h6>
+    <P></P>
+    <b> Texto em negrito</b>
+    <P></P>
+    <strong>Texto Importante</strong>
+    <!-- O texto tbm aparece em negrito, porém é usado como identificador na busca do google-->
+    <P> </P>
+    <i>Texto em itálico </i>
+    <P> </P>
+    <em>Texto enfatizado</em> <!-- O texto tbm ira aparecer em itálico porem tem maior relevancia na  busca do google-->
+    <P> </P>
+    <mark>Texto marcado</mark>
+    <P> </P>
+    <small>Texto pequeno</small>
+    <P> </P>
+    <del>Texto excluido</del>
+    <P> </P>
+    <ins>Texto inserido</ins>
+    <P> </P>
+    <sub> Texto subscrito</sub>
+    <P> </P>
+    <sup>Texto sobrescrito</sup>
+    <P> </P>
+    <code>Texto de código</code>
+    <P> </P>
+    <abbr title="HTML e CSS PRO">HeCp</abbr>
+    <!--abbr é usado para abreviação, o ususario so ira ver o nome completo  que esta entre '' quando passar o mousa sobre a palavra abreviada neste caso HeCp-->
+
+    <!------------------------------------------------------------------>
+    <!------------------------------------------------------------------>
+    <!------------------------LINKS------------------------------------->
+    <!------------------------------------------------------------------>
+    <!------------------------------------------------------------------>
+
+
+    <a href="http://www.google.com">Google</a> <!-- para adicionar um link-->
+    <a href="http://facebook.com"> FaceBook </a> <!-- <a href=''></a>-->
+    <a href="/CURSO/">CURSO HTML</a>
+    <!--Para link relativo-->
+
+    <!-- -----------------link de e-mail------------------------------------>
+    <p> </p>
+    <a href="mailto:mayarapinheirodesousa@hotmail.com">E-mail para contato </a>
+    <p></p>
+    <!--Para adicionar o e-mail-->
+    <!--<a href=''mailto:e-mail>texto</a>-->
+    <a title="Contato" href="mailto:mayarapinheirodesousa@gmail.com?subject=Teste de envio">Contato</a><br><br>
+    <!-- Para adicionar o assunto colococamos ? e suject = o assunto-->
+
+    <!---------------------------ficar na pagina----------------------------->
+
+    <h1> CURSO</h1>
+    <a target="_blank " href="http://www.google.com">INICIO</a> <br>
+    <!--para quando clicar ir para outa pagina sem sair da nossa-->
+    <a target="_blank " href="http://www.google.com">PESQUISA</a> <!-- Usamos  target="_blank"-->
+    <p> </p> <br>
+
+    <!--------------Para colocar um titulo no link quando pasar o mouse------------------------->
+
+    <a title="Pesquisa" target="_blank " href="http://www.google.com">PESQUISA</a>
+    <!-- para quando passar o mousa ensima ver um resumo-->
+    <p></p><br>
+
+    <!------------------------------------------------------------------>
+    <!------------------------------------------------------------------>
+    <!------------------------IMAGEM------------------------------------>
+    <!------------------------------------------------------------------>
+    <!------------------------------------------------------------------>
+    <!------As imagens devem ter um destes formados:.PNG .GIF .JPG------>
+
+
+    <img src="frase.png" alt="Se perguntarem por mim, fui ver a Lua ">
+    <!--img src="" é para inserir a imagem  o alt ="" e onde colococamos um texto alternatico caso a img não carregue-->
+    <!-- dentro da "" colocamos o caminho da imagem, neste caso a imagem estava na mesma pasta caso contrario colocariamos o caminho dela separando por /-->
+    <img src="ponte.png" width="350" height="350" alt="">
+    <!--width='' define a largura da imagem, height="define a altura"-->
+    <img src="ponte.png" width="400">
+    <!--para não estragarmos a imagem normalmente definimos apenas 1 .-->
+
+    <!------------------------------------------------------------------>
+    <!------------------------------------------------------------------>
+    <!------------------------FORMULARIOS------------------------------->
+    <!------------------------------------------------------------------>
+    <!------------------------------------------------------------------>
+    <br>
+    <br>
+    <br>
+    <form action="enviar-dados.php" method="POST" enctype="multipart/form-data">
+        <!-------action é para onde o formulario será enviado, o method  sempre usar POST para não mostrar os dados------------------------>
+        <!------<form>tag para inicializaçao de um fomulario<!form>------------------------------------------------------------------------->
+        <!------<input especificação de entrada para o usuario preencher enctype é usado quando for passar imagem no formulario------------->
+         <p>
+
+        NOME:<input type="text" name="nome" id="nome">  
+        SOBRE NOME: <input type="text" name="sobreNome" id="sobreNome"><br>
+        E-MAIL: <input type="email" name="email" id="email"> <br>
+        TELEFONE: <input type="text" name="tel" id="tel">
+        </p>
+        <!------------------------------------------------------------------------------------------------>
+        <!----------------------selecionar apenas uma opção---------------------------------------------->
+        <!--radio é usado para o usuario selecionar apena uma opção, para isto o nome deve ser o mesmo em todas as opçoes mudando apenas o id-->
+        <fieldset>             <!--agrupa os campos,faz a bordinha-->
+
+            <legend>Selecione </legend>  <!-- para colocar um texto na bordinha-->
+
+                <label> SEXO:            <input type="radio" name="sexo" id="feminino"> Feminino </label>
+                <label>                   <input type="radio" name="sexo" id="masculino"> Masculino <br> </label>
+                          <!-- usamos label para selecionar clicando no texto-->
+                
+        
+
+                 <!------------------------------------------------------------------------------------------------>
+                 <!----------------------selecionar mais de uma opção---------------------------------------------->
+                 <!-- checkbox-->
+                <label> DESEJO APRENDER:  <input type="checkbox" name="materia" id="css"> CSS </label>
+                <label>                   <input type="checkbox" name="materia" id="html"> HTML </label>
+                <label>                   <input type="checkbox" name="materia" id="js"> JAVASCRIPT <br></label>
+                
+       
+                 <!--------------------------------------------------------------------------------------------------->
+                 <!-----------------------seleção de uma opção entre um lista----------------------------------------->
+                 <!-- Usamos  select e option -->   
+
+                        Por qual Curso você deseja começar: 
+                <select name="sele" id="sele"> 
+                        <option value="nulo"> </option>
+                        <option value="css">CSS</option>
+                        <option value="html">HTML</option>
+                        <option value="js">JAVA SCRIPT</option> <br>
+                </select>
+
+                <!---------------------------------------------------------------------------------------------------------->
+                <!---------------Aqui criamos outro grupo separando por area ----------------------------------------------->
+
+                <select name="" id= "">
+                         <option value="" selected> </option>
+                   <optgroup label="DESENVOLVIMENTO">   <!-- Criou uma separação por desenvolvimento-->
+                          <option value="html1">HTML</option>
+                          <option value="css1">CSS</option>
+                          <option value="js1">JAVASCRIPT</option>
+                    </optgroup>
+                    <optgroup label="PROGRAMAÇÃO"> <!--Criou uma separação por programação-->
+                        <option value="C#">C# </option>
+                        <option value="JAVA">JAVA</option>
+
+                    </optgroup>
+                </select>
+
+
+
+        </fieldset>
+               <!-------------------------------------------------------------------------------------------------------------------------->
+               <!-------------------------------------Adicionando texto--------------------------------------------------------------------->
+               <!--texarea quando queremos dar mais espaço para o ususario digitar.cols:largura, rows:altura, maxlength: max de caracteres -->
+
+                   <br>
+                Deixe mais informaçoes sobre o seu interesse: <br>
+                <textarea name="txt1" id="txt1" cols="186" rows="10" maxlength="200"> </textarea>
+
+                <input type="reset" value="limpar"  LIMPAR>  <!-- LIMPA TODOS OS DADOS DO FORMULARIO-->
+                <input type="submit" value="enviar" ENVIAR>
+</body>
+
+</html>
