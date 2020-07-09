@@ -10,12 +10,12 @@
     <meta name="description" content="Página para testar o conteudo do curso HTML e CSS pro">
     <!--Aqu v ai a descrição do site-->
     <!--meta http-equiv="refresh" content="10"> -->
-        <!--para atualizar a pagina a casa  tempo , definido em content-->
-        <meta name="author" content="mayara">
-        <!--autor da pagina-->
-        <meta keywords content="site, css, html">
-        <!--Palavras chaves o google não usa mais este dado-->
-        <title>Curso HTML & CSS pro</title> <!-- Titulo da página-->
+    <!--para atualizar a pagina a casa  tempo , definido em content-->
+    <meta name="author" content="mayara">
+    <!--autor da pagina-->
+    <meta keywords content="site, css, html">
+    <!--Palavras chaves o google não usa mais este dado-->
+    <title>Curso HTML & CSS pro</title> <!-- Titulo da página-->
 </head>
 
 <body>
@@ -120,76 +120,223 @@
         <!-------action é para onde o formulario será enviado, o method  sempre usar POST para não mostrar os dados------------------------>
         <!------<form>tag para inicializaçao de um fomulario<!form>------------------------------------------------------------------------->
         <!------<input especificação de entrada para o usuario preencher enctype é usado quando for passar imagem no formulario------------->
-         <p>
+        <p>
 
-        NOME:<input type="text" name="nome" id="nome">  
-        SOBRE NOME: <input type="text" name="sobreNome" id="sobreNome"><br>
-        E-MAIL: <input type="email" name="email" id="email"> <br>
-        TELEFONE: <input type="text" name="tel" id="tel">
+            NOME:<input type="text" name="nome" id="nome">
+            SOBRE NOME: <input type="text" name="sobreNome" id="sobreNome"><br>
+            E-MAIL: <input type="email" name="email" id="email"> <br>
+            TELEFONE: <input type="text" name="tel" id="tel">
         </p>
         <!------------------------------------------------------------------------------------------------>
         <!----------------------selecionar apenas uma opção---------------------------------------------->
         <!--radio é usado para o usuario selecionar apena uma opção, para isto o nome deve ser o mesmo em todas as opçoes mudando apenas o id-->
-        <fieldset>             <!--agrupa os campos,faz a bordinha-->
+        <fieldset>
+            <!--agrupa os campos,faz a bordinha-->
 
-            <legend>Selecione </legend>  <!-- para colocar um texto na bordinha-->
+            <legend>Selecione </legend> <!-- para colocar um texto na bordinha-->
 
-                <label> SEXO:            <input type="radio" name="sexo" id="feminino"> Feminino </label>
-                <label>                   <input type="radio" name="sexo" id="masculino"> Masculino <br> </label>
-                          <!-- usamos label para selecionar clicando no texto-->
-                
-        
+            <label> SEXO: <input type="radio" name="sexo" id="feminino"> Feminino </label>
+            <label> <input type="radio" name="sexo" id="masculino"> Masculino <br> </label>
+            <!-- usamos label para selecionar clicando no texto-->
 
-                 <!------------------------------------------------------------------------------------------------>
-                 <!----------------------selecionar mais de uma opção---------------------------------------------->
-                 <!-- checkbox-->
-                <label> DESEJO APRENDER:  <input type="checkbox" name="materia" id="css"> CSS </label>
-                <label>                   <input type="checkbox" name="materia" id="html"> HTML </label>
-                <label>                   <input type="checkbox" name="materia" id="js"> JAVASCRIPT <br></label>
-                
-       
-                 <!--------------------------------------------------------------------------------------------------->
-                 <!-----------------------seleção de uma opção entre um lista----------------------------------------->
-                 <!-- Usamos  select e option -->   
 
-                        Por qual Curso você deseja começar: 
-                <select name="sele" id="sele"> 
-                        <option value="nulo"> </option>
-                        <option value="css">CSS</option>
-                        <option value="html">HTML</option>
-                        <option value="js">JAVA SCRIPT</option> <br>
-                </select>
 
-                <!---------------------------------------------------------------------------------------------------------->
-                <!---------------Aqui criamos outro grupo separando por area ----------------------------------------------->
+            <!------------------------------------------------------------------------------------------------>
+            <!----------------------selecionar mais de uma opção---------------------------------------------->
+            <!-- checkbox-->
+            <label> DESEJO APRENDER: <input type="checkbox" name="materia" id="css"> CSS </label>
+            <label> <input type="checkbox" name="materia" id="html"> HTML </label>
+            <label> <input type="checkbox" name="materia" id="js"> JAVASCRIPT <br></label>
 
-                <select name="" id= "">
-                         <option value="" selected> </option>
-                   <optgroup label="DESENVOLVIMENTO">   <!-- Criou uma separação por desenvolvimento-->
-                          <option value="html1">HTML</option>
-                          <option value="css1">CSS</option>
-                          <option value="js1">JAVASCRIPT</option>
-                    </optgroup>
-                    <optgroup label="PROGRAMAÇÃO"> <!--Criou uma separação por programação-->
-                        <option value="C#">C# </option>
-                        <option value="JAVA">JAVA</option>
 
-                    </optgroup>
-                </select>
+            <!--------------------------------------------------------------------------------------------------->
+            <!-----------------------seleção de uma opção entre um lista----------------------------------------->
+            <!-- Usamos  select e option -->
+
+            Por qual Curso você deseja começar:
+            <select name="sele" id="sele">
+                <option value="nulo"> </option>
+                <option value="css">CSS</option>
+                <option value="html">HTML</option>
+                <option value="js">JAVA SCRIPT</option> <br>
+            </select>
+
+            <!---------------------------------------------------------------------------------------------------------->
+            <!---------------Aqui criamos outro grupo separando por area ----------------------------------------------->
+
+            <select name="" id="">
+                <option value="" selected> </option>
+                <optgroup label="DESENVOLVIMENTO">
+                    <!-- Criou uma separação por desenvolvimento-->
+                    <option value="html1">HTML</option>
+                    <option value="css1">CSS</option>
+                    <option value="js1">JAVASCRIPT</option>
+                </optgroup>
+                <optgroup label="PROGRAMAÇÃO">
+                    <!--Criou uma separação por programação-->
+                    <option value="C#">C# </option>
+                    <option value="JAVA">JAVA</option>
+
+                </optgroup>
+            </select>
 
 
 
         </fieldset>
-               <!-------------------------------------------------------------------------------------------------------------------------->
-               <!-------------------------------------Adicionando texto--------------------------------------------------------------------->
-               <!--texarea quando queremos dar mais espaço para o ususario digitar.cols:largura, rows:altura, maxlength: max de caracteres -->
+        <!-------------------------------------------------------------------------------------------------------------------------->
+        <!-------------------------------------Adicionando texto--------------------------------------------------------------------->
+        <!--texarea quando queremos dar mais espaço para o ususario digitar.cols:largura, rows:altura, maxlength: max de caracteres -->
 
-                   <br>
-                Deixe mais informaçoes sobre o seu interesse: <br>
-                <textarea name="txt1" id="txt1" cols="186" rows="10" maxlength="200"> </textarea>
+        <br>
+        Deixe mais informaçoes sobre o seu interesse: <br>
+        <textarea name="txt1" id="txt1" cols="186" rows="10" maxlength="200"> </textarea>
 
-                <input type="reset" value="limpar"  LIMPAR>  <!-- LIMPA TODOS OS DADOS DO FORMULARIO-->
-                <input type="submit" value="enviar" ENVIAR>
+        <input type="reset" value="limpar" LIMPAR> <!-- LIMPA TODOS OS DADOS DO FORMULARIO-->
+        <input type="submit" value="enviar" ENVIAR> <br> <br><br>
+
+
+        <!------------------------------------------------------------------>
+        <!------------------------------------------------------------------>
+        <!------------------------TABELAS----------------------------------->
+        <!------------------------------------------------------------------>
+        <!--usamos o elemento table-->
+        <!-- cellpadding da espaço dentro da coluna --- cellspacing= espaço entre as colunas-- border= coloca uma borda na tabela.-->
+        <!-- <tr> linha horizontal <th> cabeçãrio da tabela, <td> elementos da celula-->
+
+        <table cellpadding="30" cellspacing="3" border="10">
+            <h1> TABELA </h1>
+            <tr>
+                <th>NOME </th>
+                <th>IDADE</th>
+                <th>ENDEREÇO</th>
+                <th>TELEFONE</th>
+
+            </tr>
+            <tr>
+                <td>Mayara Pinheiro de Sousa</td>
+                <td>25 anos</td>
+                <td>Rua x</td>
+                <td>11981142324</td>
+
+            </tr>
+            <tr>
+                <td>Camilho Strobio Neto</td>
+                <td>30 anos</td>
+                <td>Rua x</td>
+                <td>11981143535</td>
+
+            </tr>
+        </table>
+
+        <table cellpadding="3" cellspacing="0" border="5">
+            <H1>MESCLANDO DUAS COLUNAS HORIZONTALMENTE</H1>
+            <tr>
+                <th colspan="2">TELEFONES</th> <!-- paar mescrar mais de 1 elemento  horizontal-->
+            </tr>
+            <tr>
+                <td>11 981142692</td>
+                <td>11 981142692</td>
+            </tr>
+            <tr>
+                <td>11 981333333</td>
+                <td>11 988846465</td>
+            </tr>
+
+
+        </table>
+        <table cellspacing="0" cellpadding="10" border="1">
+            <H1> MESCLANDO COLUNA VERTICALMENTE</H1>
+            <tr>
+                <th rowspan="5"> tel</th>
+                <!-- para mescrar  + de um elemento na mesma celula vertical, AQUI CONTAMOS POR LINHA , O PROPRIO TITULO CONTA COM UMA LINHA-->
+            </tr>
+
+            <tr>
+
+                <td>59844</td>
+                <td>634343</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>39384</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>39384</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>39384</td>
+            </tr>
+        </table>
+
+
+        <table cellpadding='10' cellspacind='3' border="2">
+            <tr>
+                <th rowspan="4">teste</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td> 4 </td>
+            </tr>
+            <tr>
+                <td colspan="2">5</td>
+
+            </tr>
+
+        </table>
+
+
+        </table>
+
+        <br> <br><br><br><br>
+
+
+
+
+        <!------------------------------------------------------------------------------------------->
+        <!-------------------------CRIAÇÃO DE LISTA--------------------------------------------->
+        <!----ul lista não ordenada , ol lista ordenada, dl lista com descrição ------------------------------------------------------->
+        <!-----em ul e ol lusanos li -- em dl usamos dt para p titulo e  dd descrição---------------------------------------------------->
+
+
+
+
+        <h1> LISTA </h1>
+        <ul>
+            <li> teste</li>
+            <li> teste</li>
+            <li> teste</li>
+
+        </ul>
+        <ol>
+            <li> teste</li>
+            <li> teste</li>
+            <li> teste</li>
+
+        </ol>
+        <dl>
+            <dt> teste</dt>
+            <dd> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ut, aspernatur veniam, eaque
+                obcaecati ullam laudantium est ex ratione vel modi similique aliquid, minus laboriosam itaque distinctio
+                magnam atque voluptatum!</dd>
+        </dl>
+   <!----------------------------------------------------------------------------------------------------------------------->
+   <!----------------------------------colocando arquivo dentro so site----------------------------------------------------->
+   <!------------------------------------------------------------------------------------------------------------------------->
+         
+        <iframe src="https://vanduarte.com.br/?gclid=Cj0KCQjwgJv4BRCrARIsAB17JI5dO4CpVVL_Kwh4mKEwYKa0A8lVtWokMKzpNesJhNrzCYMElVlUqccaAnPfEALw_wcB" width="400px" height="200px" frameborder="0"></iframe>
+        <iframe src="https://camilostrobio.github.io/html-css-na-pratica/#contato" width="400px" height="500px" frameborder="0"></iframe>
+        
+
 </body>
 
 </html>

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial;   /* fonte usada */
+}
+ header {
+     width: 300px;   /* largura*/
+     padding: 10px;  /* altura*/
+     background: #9D9171; /* cor do fundo*/
+ }
+ h1 {
+     color:#533745; /* cor da letra*/
+     border-bottom: 4px dotted #AB4E68; /* borda abaixo da letra, tamanho da borda, tipo de borda, cor da borda*/
+     margin: 0; /* margem no topo da tela*/
+     padding-bottom: 10px; /* da espaço entre a letra*/
+    }
+
+p {
+    color:#C4A287; /* cor da letra*/
+}
+div.casa p {
+    color: darkblue;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div.lugares p {
+    color: darkorange;
+} 
+div#t1 p {
+    color: deeppink;
+    font-size: 60px;  /*tamanho da font*/
+    font-family: 'Times New Roman', Times, serif;  /* define  a familia de font*/
+    font-style: italic;  /*stylo da font*/
+    font-variant: small-caps; /* deixa o text em letras maiusculas pequenas*/ 
+    font-weight: bolder; /* deixa o texto em negrito*/
+    text-align: center; /* alinha o text0*/
+    text-indent:4px ; /* recuo para iniciar o paragrafo*/
+    letter-spacing: 8px; /* espaço entre as letras */
+    word-spacing: 3px; /* espaço entre as palavras*/
+    text-decoration: overline; /* coloca um linha acima do texto*/
+    text-shadow: 2px 2px 8px blue; /*colocar sombra na letra*/
+    white-space: nowrap; /* informa o que fazer com a parte branca*/
+
+}
+div#t1 {
+    background: #C4A287;
+    width: 400px;
+    padding:8px;
+    font-size: 30px;
+   border-bottom:1px dotted darkviolet;
+}
+.teste {
+    height: 200px;
+    width: 300px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 7px; /**/
+    background-color: blue;/*cor de fundo*/
+    color: cornsilk; /*cor da font*/
+}
+
+
+
+
+
+div.rua {
+    color: chartreuse;
+    background-image:url("ponte.png");
+    height: 800px
+    width: 800px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
