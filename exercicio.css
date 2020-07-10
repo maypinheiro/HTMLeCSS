@@ -1,0 +1,28 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    /* estamos tirando a margem da tela, que vem por padrão*/
+}
+.row {
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.row div{
+    background: darkred;
+    height: 80px;
+    float: left;
+}
+/* linha 1*/
+.linha1 .coluna {
+    width: 100%;
+}
+/* linha 2*/
+.linha2 .coluna {
+    width: 48%;
+}
+.linha2 .coluna:last-child {    /* estamos pegando o ultimo elemento da coluna , a classe filha*/
+    float: right;
+}

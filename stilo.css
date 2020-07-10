@@ -63,28 +63,109 @@ div#t1 {
 
 
 div.rua {
-    color: chartreuse;
-    background-image:url("ponte.png");
-    height: 800px
-    width: 800px;
-
+    color:white;
+    text-align: center;
+    background-image:url("coracao.png");
+    height: 650px;  /* Altura*/
+    width: 800px;   /*largura*/
+    padding:35px;
+    font-size: 40px;
+    background-repeat: no-repeat; /*paa imagem não se repetir */
+    background-position: 200px 0; /*posição que eu quero que a img comece*/
+    background-attachment: fixed;  /* para fixar a imagem */
+    background-color:rgb(81, 255, 136);
+    position: relative;
+}
+div.rua div {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0%;
 }
 
 
+div.bordasteste {
+    width: 400px; /*altura*/
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+    border-width: 5px; /* tamanho da borda*/
+    border-style: solid; /* stylo da borda */
+    border-color: rgba(197, 44, 95, 0.884);
+    border-radius: 9px;
+}
+
+div.borda { width: 400px; }
+p {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    border-color: red;
+    border-width: 5px;
+    color: black;
+    border-radius: 10px;
+}
+.solid { border-style: solid;}
+.dotted {border-style: dotted;}
+.double {border-style: double;}
+.groove {border-style: groove;}
+.ridge {border-style:ridge;}
+.inset {border-style: inset;}
+.outset{border-style: outset;}
+.hidden {border-style: hidden}
+
+
+.lista1 {
+    font-size: 20px;
+} 
+ul.a {
+    list-style-type: none;
+}
+ul.b {
+    list-style-type: upper-roman;
+}
+div.position p {
+    position: relative; /* onde umelemento deve esta localizado na pagina*/
+    left: 50px;  /*esoaçamento do texto para o box*/
+    background-color: yellow; /*cor de fundo*/
+    width: 140px; /*altura*/
+}
+ div.p1 {
+     color: tomato;
+     position: relative;
+     top: 50px;
+     left: 50px;
+     padding: 20px;
+ }
+     
+ .fixed p {
+     position: fixed;
+     background-color: rgba(191, 211, 216, 0.616);
+     top: 1px;
+     left: 5px;
+     border: tomato;
+     border-style: inset;
+     padding: 25px; 
+ }
 
 
 
+ .relative  {
 
+    background-color: rgb(81, 255, 136);
+    width: 500px;
+    height: 400px;
+    left: 100px;
+    position: relative;
+ }
+ .absolut {
+     background-color: blue;
+     width: 50px;
+     height: 50px;
+     right: 0px;
+     top: 0px;
+     position: absolute;
 
+    
+ }
 
-
-
-
-
-
-
-
-
-
-
-
+ 
